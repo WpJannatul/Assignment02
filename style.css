@@ -1,0 +1,924 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #190c2d;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    border-bottom: 1px solid rgba(255, 255, 0, 0.12);
+}
+.navbar {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+.logo span {
+    color: #ed00d9;
+}
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+.nav-links a {
+    color: #bdb3c9;
+    font-size: 14px;
+}
+.sub-button {
+    padding: 10px 20px;
+    border-radius: 25px;
+
+    background: linear-gradient(
+        45deg,
+        #ffe83b,
+        #ff18c8,
+        #9900ff
+    );
+
+    font-size: 14px;
+    font-weight: bold;
+}
+.hero-section {
+    min-height: 710px;
+    padding: 94px 20px 80px;
+    overflow: hidden;
+
+    text-align: center;
+
+    background-image: url("images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+}
+.hero-images {
+    position: relative;
+
+    width: 310px;
+    height: 310px;
+    margin: 0 auto 47px;
+}
+
+.circle {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.microphone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+
+    width: 38%;
+    height: auto;
+
+    transform: translate(-50%, -50%);
+}
+.new-badge {
+    position: absolute;
+    top: 10%;
+    right: 20px;
+    z-index: 3;
+
+    padding: 8px 15px;
+    border-radius: 20px;
+
+    background: #00ff88;
+    color: #071c18;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    white-space: nowrap;
+
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.65);
+}
+.hero-content h1 {
+    margin-bottom: 12px;
+
+    font-size: 56px;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.hero-content p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+
+    color: #aaa0b9;
+    font-size: 15px;
+    line-height: 1.6;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 11px 20px;
+    border-radius: 25px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.spotify-button {
+    background: linear-gradient(
+        45deg,
+        #ffe83b,
+        #ff18c8,
+        #9900ff
+    );
+}
+
+.spotify-button img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.listen-button {
+    color: #00ff88;
+    border: 1px solid #00ff88;
+}
+
+.listen-button img {
+    width: 18px;
+    height: auto;
+}
+
+/* About Section */
+
+.about-section {
+    padding: 90px 20px;
+    background: #190c2d;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+    font-size: 42px;
+    color: #ffffff;
+}
+
+.about-description {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    color: #aaa0b9;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.about-stats {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    margin-top: 55px;
+    padding-top: 55px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.stat-box {
+    width: 220px;
+    padding: 10px 20px;
+}
+
+.stat-box h3 {
+    margin-bottom: 8px;
+    color: #00ff88;
+    font-size: 40px;
+}
+
+.stat-box p {
+    color: #aaa0b9;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* Why Choose Section */
+
+.why-section {
+    padding: 90px 20px;
+    background: #230e3d;
+}
+
+.why-container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.why-section h2 {
+    margin-bottom: 40px;
+    font-size: 42px;
+    text-align: center;
+}
+
+.why-top {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 28px;
+}
+
+.why-right {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.why-bottom {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 28px;
+
+    margin-top: 28px;
+}
+
+.why-card {
+    padding: 36px;
+    border-radius: 36px;
+    background: #2a0f4d;
+}
+
+.why-big {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.why-right .why-card {
+    flex: 1;
+}
+
+.why-card img {
+    display: block;
+    align-self: flex-start;
+    margin-bottom: 16px;
+}
+
+.why-card h3 {
+    margin-bottom: 14px;
+    font-size: 20px;
+}
+
+.why-card p {
+    color: #a89eb4;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Episodes Section */
+
+.episodes-section {
+    padding: 90px 20px;
+    background: #190c2d;
+}
+
+.episodes-section h2 {
+    margin-bottom: 40px;
+    font-size: 42px;
+    text-align: center;
+}
+
+.episodes-container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* Grid er bhitor card chhara onno kono extra element thakle hide hobe */
+
+.episodes-container > :not(.episode-card) {
+    display: none;
+}
+
+.episode-card {
+    overflow: hidden;
+    border-radius: 28px;
+    background: #250d44;
+}
+
+.episode-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.episode-content {
+    padding: 22px;
+}
+
+.episode-content h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.episode-content p {
+    margin-bottom: 14px;
+    color: #a89eb4;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.duration {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #00ff88;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.duration img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Host Section */
+
+.host-section {
+    padding: 20px 20px 90px;
+    background: #190c2d;
+}
+
+.host-section h2 {
+    margin-bottom: 40px;
+    font-size: 42px;
+    text-align: center;
+}
+
+.host-card {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 36px;
+    border-radius: 36px;
+    background: #250d44;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.host-img {
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+}
+
+.host-info h3 {
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+
+.host-info p {
+    color: #a89eb4;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.social-links {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.social-links a {
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+
+.footer {
+    padding: 95px 20px 60px;
+    text-align: center;
+
+    background-color: #230e3d;
+    background-image: url("images/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 14px;
+
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.footer-logo span {
+    color: #ed00d9;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    margin-bottom: 30px;
+}
+
+.footer-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #cbc5d3;
+    font-size: 14px;
+}
+
+.footer-links img {
+    width: 18px;
+    height: auto;
+}
+
+.copyright {
+    color: #a39dab;
+    font-size: 13px;
+}
+
+/* Large Device: above 993px */
+
+@media (min-width: 993px) {
+
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .why-top {
+        grid-template-columns: 360px 1fr;
+    }
+
+    .why-bottom {
+        grid-template-columns: 1fr 360px;
+    }
+
+    .episodes-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Medium Device: 577px to 992px */
+
+@media (min-width: 577px) and (max-width: 992px) {
+
+    /* Header */
+
+    .navbar {
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    /* Hero */
+
+    .hero-section {
+        min-height: 650px;
+        padding: 70px 24px;
+    }
+
+    .hero-images {
+        width: 280px;
+        height: 280px;
+        margin-bottom: 32px;
+    }
+
+    .new-badge {
+        font-size: 13px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        max-width: 550px;
+    }
+
+    /* About */
+
+    .about-section {
+        padding: 70px 24px;
+    }
+
+    .about-stats {
+        flex-wrap: wrap;
+    }
+
+    /* Why Choose */
+
+    .why-section {
+        padding: 70px 24px;
+    }
+
+    .why-top,
+    .why-bottom {
+        grid-template-columns: 1fr;
+    }
+
+    /* Episodes */
+
+    .episodes-section {
+        padding: 70px 24px;
+    }
+
+    .episodes-container {
+        grid-template-columns: 1fr;
+        gap: 17px;
+        max-width: 640px;
+    }
+
+    .episode-card {
+        border-radius: 28px;
+    }
+
+    .episode-content {
+        padding: 16px;
+    }
+
+    .episode-content h3 {
+        margin-bottom: 8px;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .episode-content p {
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .duration {
+        font-size: 16px;
+    }
+
+    /* Host */
+
+    .host-section {
+        padding: 20px 24px 70px;
+    }
+
+    /* Footer */
+
+    .footer-logo {
+        font-size: 56px;
+    }
+}
+
+/* Mobile Device: up to 576px */
+
+@media (max-width: 576px) {
+
+    /* Header */
+
+    .navbar {
+        width: 92%;
+        padding: 13px 0;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .nav-links,
+    .navbar .sub-button {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 18px;
+        height: 14px;
+    }
+
+    /* Hero */
+
+    .hero-section {
+        min-height: 0;
+        padding: 40px 20px 39px;
+
+        background-color: #1a0b2e;
+        background-size: 100% auto;
+        background-position: center 64px;
+    }
+
+    .hero-images {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 27px;
+    }
+
+    .microphone {
+        width: 24%;
+    }
+
+    .new-badge {
+        top: 4px;
+        right: 0;
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+
+    .hero-content h1 {
+        margin-bottom: 8px;
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        max-width: 360px;
+        margin: 0 auto 22px;
+        color: #d1ced5;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .buttons a {
+        padding: 0 20px;
+        height: 44px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .spotify-button img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* About */
+
+    .about-section {
+        padding: 40px 20px;
+    }
+
+    .about-section h2 {
+        margin-bottom: 16px;
+        font-size: 32px;
+    }
+
+    .about-description {
+        max-width: none;
+        margin: 0 auto 12px;
+        color: #d1ced5;
+        font-size: 16px;
+        line-height: 1.28;
+    }
+
+    .about-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 48px 0;
+
+        margin-top: 28px;
+        padding-top: 40px;
+    }
+
+    .stat-box {
+        width: auto;
+        max-width: none;
+        padding: 0;
+    }
+
+    .stat-box h3 {
+        margin-bottom: 16px;
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .stat-box p {
+        color: #d1ced5;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    /* Why Choose */
+
+    .why-section {
+        padding: 40px 20px;
+    }
+
+    .why-section h2,
+    .episodes-section h2,
+    .host-section h2 {
+        font-size: 32px;
+    }
+
+    .why-section h2 {
+        margin-bottom: 17px;
+    }
+
+    .why-top,
+    .why-bottom {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .why-right {
+        gap: 20px;
+    }
+
+    .why-bottom {
+        margin-top: 20px;
+    }
+
+    .why-card {
+        padding: 24px;
+        border-radius: 28px;
+    }
+
+    .why-card img {
+        margin-bottom: 18px;
+    }
+
+    .why-card h3 {
+        margin-bottom: 16px;
+        font-size: 22px;
+    }
+
+    .why-card p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Episodes */
+
+    .episodes-section {
+        padding: 40px 20px;
+    }
+
+    .episodes-section h2 {
+        margin-bottom: 24px;
+    }
+
+    .episodes-container {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    .episode-card {
+        border-radius: 28px;
+    }
+
+    .episode-content {
+        padding: 16px;
+    }
+
+    .episode-content h3 {
+        margin-bottom: 8px;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .episode-content p {
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .duration {
+        font-size: 16px;
+    }
+
+    .duration img {
+        width: 17px;
+        height: 17px;
+    }
+
+    /* Host */
+
+    .host-section {
+        padding: 22px 20px 40px;
+    }
+
+    .host-section h2 {
+        margin-bottom: 24px;
+    }
+
+    .host-card {
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px;
+        border-radius: 28px;
+        text-align: center;
+    }
+
+    .host-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .host-info h3 {
+        margin-bottom: 14px;
+        font-size: 24px;
+    }
+
+    .host-info p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 30px 20px 40px;
+
+        background-color: #210f41;
+        background-size: 100% auto;
+        background-position: center 47px;
+    }
+
+    .footer-logo {
+        margin-bottom: 14px;
+        font-size: 44px;
+    }
+
+    .footer-links {
+        gap: 16px 18px;
+        margin-bottom: 24px;
+    }
+
+    .footer-links a {
+        font-size: 16px;
+    }
+
+    .footer-links img {
+        width: 20px;
+    }
+
+    .copyright {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
