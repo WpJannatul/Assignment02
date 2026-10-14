@@ -152,11 +152,7 @@ header {
 
 .spotify-button {
     background: linear-gradient(
-        45deg,
-        #ffe83b,
-        #ff18c8,
-        #9900ff
-    );
+45deg, #ffe83b, #ff18c8, #9900ff);
 }
 
 .spotify-button img {
@@ -174,9 +170,6 @@ header {
     width: 18px;
     height: auto;
 }
-
-/* About Section */
-
 .about-section {
     padding: 90px 20px;
     background: #190c2d;
@@ -228,9 +221,6 @@ header {
     font-size: 14px;
     text-transform: uppercase;
 }
-
-/* Why Choose Section */
-
 .why-section {
     padding: 90px 20px;
     background: #230e3d;
@@ -300,9 +290,6 @@ header {
     font-size: 14px;
     line-height: 1.6;
 }
-
-/* Episodes Section */
-
 .episodes-section {
     padding: 90px 20px;
     background: #190c2d;
@@ -373,8 +360,6 @@ header {
     height: 16px;
 }
 
-/* Host Section */
-
 .host-section {
     padding: 20px 20px 90px;
     background: #190c2d;
@@ -431,9 +416,6 @@ header {
     align-items: center;
     justify-content: center;
 }
-
-/* Footer */
-
 .footer {
     padding: 95px 20px 60px;
     text-align: center;
@@ -484,9 +466,6 @@ header {
     color: #a39dab;
     font-size: 13px;
 }
-
-/* Large Device: above 993px */
-
 @media (min-width: 993px) {
 
     .menu-icon {
@@ -509,9 +488,6 @@ header {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
-/* Medium Device: 577px to 992px */
-
 @media (min-width: 577px) and (max-width: 992px) {
 
     /* Header */
@@ -527,9 +503,6 @@ header {
     .nav-links {
         gap: 20px;
     }
-
-    /* Hero */
-
     .hero-section {
         min-height: 650px;
         padding: 70px 24px;
@@ -552,9 +525,6 @@ header {
     .hero-content p {
         max-width: 550px;
     }
-
-    /* About */
-
     .about-section {
         padding: 70px 24px;
     }
@@ -562,9 +532,6 @@ header {
     .about-stats {
         flex-wrap: wrap;
     }
-
-    /* Why Choose */
-
     .why-section {
         padding: 70px 24px;
     }
@@ -573,9 +540,6 @@ header {
     .why-bottom {
         grid-template-columns: 1fr;
     }
-
-    /* Episodes */
-
     .episodes-section {
         padding: 70px 24px;
     }
@@ -609,29 +573,17 @@ header {
     .duration {
         font-size: 16px;
     }
-
-    /* Host */
-
     .host-section {
         padding: 20px 24px 70px;
     }
-
-    /* Footer */
-
     .footer-logo {
         font-size: 56px;
     }
 }
-
-/* Mobile Device: up to 576px */
-
 @media (max-width: 576px) {
-
-    /* Header */
-
     .navbar {
-        width: 92%;
-        padding: 13px 0;
+     width: 92%;
+    padding: 13px 0;
     }
 
     .logo {
@@ -648,9 +600,6 @@ header {
         width: 18px;
         height: 14px;
     }
-
-    /* Hero */
-
     .hero-section {
         min-height: 0;
         padding: 40px 20px 39px;
@@ -706,9 +655,6 @@ header {
         width: 20px;
         height: 20px;
     }
-
-    /* About */
-
     .about-section {
         padding: 40px 20px;
     }
@@ -752,16 +698,11 @@ header {
         font-size: 16px;
         line-height: 20px;
     }
-
-    /* Why Choose */
-
     .why-section {
         padding: 40px 20px;
     }
 
-    .why-section h2,
-    .episodes-section h2,
-    .host-section h2 {
+    .why-section h2,.episodes-section h2,.host-section h2 {
         font-size: 32px;
     }
 
@@ -769,93 +710,70 @@ header {
         margin-bottom: 17px;
     }
 
-    .why-top,
-    .why-bottom {
+    .why-top,.why-bottom {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-
     .why-right {
         gap: 20px;
     }
-
     .why-bottom {
         margin-top: 20px;
     }
-
     .why-card {
         padding: 24px;
         border-radius: 28px;
     }
-
     .why-card img {
         margin-bottom: 18px;
     }
-
     .why-card h3 {
         margin-bottom: 16px;
         font-size: 22px;
     }
-
     .why-card p {
         font-size: 16px;
         line-height: 1.5;
     }
-
-    /* Episodes */
-
     .episodes-section {
         padding: 40px 20px;
     }
-
     .episodes-section h2 {
         margin-bottom: 24px;
     }
-
     .episodes-container {
         grid-template-columns: 1fr;
         gap: 17px;
     }
-
     .episode-card {
         border-radius: 28px;
     }
-
     .episode-content {
         padding: 16px;
     }
-
     .episode-content h3 {
         margin-bottom: 8px;
         font-size: 20px;
         line-height: 1.2;
     }
-
     .episode-content p {
         margin-bottom: 10px;
         font-size: 16px;
         line-height: 1.5;
     }
-
     .duration {
         font-size: 16px;
     }
-
     .duration img {
         width: 17px;
         height: 17px;
     }
-
-    /* Host */
-
     .host-section {
         padding: 22px 20px 40px;
     }
-
     .host-section h2 {
         margin-bottom: 24px;
     }
-
     .host-card {
         flex-direction: column;
         gap: 16px;
@@ -863,34 +781,26 @@ header {
         border-radius: 28px;
         text-align: center;
     }
-
     .host-img {
         width: 150px;
         height: 150px;
     }
-
     .host-info h3 {
         margin-bottom: 14px;
         font-size: 24px;
     }
-
     .host-info p {
         font-size: 16px;
         line-height: 1.5;
     }
-
     .social-links {
         justify-content: center;
         margin-top: 16px;
     }
-
     .social-links a {
         width: 40px;
         height: 40px;
     }
-
-    /* Footer */
-
     .footer {
         padding: 30px 20px 40px;
 
@@ -915,6 +825,7 @@ header {
 
     .footer-links img {
         width: 20px;
+        height: 20px;
     }
 
     .copyright {
